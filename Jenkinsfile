@@ -62,7 +62,7 @@ pipeline {
                 //        sh '/opt/auto_build/csis3_external/pullrequest/workspace/buildApplication.sh'
                 //        echo 'Hello I am done'
                 //    }
-                }                
+                //}                
             }
         }
     }
