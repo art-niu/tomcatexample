@@ -17,7 +17,7 @@ pipeline {
             
             causeString: 'Triggered on Pull request $BRANCH_FROM',
             
-            token: 'feature_csis3',
+            token: 'feature_tomcat',
             
             printContributedVariables: true,
             printPostContent: true,
@@ -35,16 +35,6 @@ pipeline {
                         }
                         notifyBitbucketServer('INPROGRESS') 
                     }
-                }
-                //stage('Checkout-External') {
-                //    steps{
-                //        ws('/opt/devops/pullrequest/project2'){
-                //            echo "Workspace dir is ${pwd()}"
-                //            echo "Branch to be checked out is ${params.BRANCH_FROM}"
-                //            checkout([$class: 'GitSCM', branches: [[name: BRANCH_FROM]], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'PruneStaleBranch'], [$class: 'RelativeTargetDirectory', relativeTargetDir: 'apache']], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'Jenkins', url: 'https://github.com/apache/tomcat.git']]])
-                //        }
-                //        notifyBitbucketServer('INPROGRESS') 
-                //    }
                 }
             }
         }
