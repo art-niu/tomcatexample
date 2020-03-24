@@ -1,0 +1,10 @@
+[
+  {
+    "ParameterKey": "KeyName",
+    "ParameterValue": "your_existing_key_pair_name"
+  }, 
+  {
+    "ParameterKey": "InstanceName",
+    "ParameterValue": "jenkins01"
+  }
+]
